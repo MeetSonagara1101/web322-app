@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Shop | The Ecommercers Tavern</title>
+  <link href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css" rel="stylesheet">
+  <style>
+    .form-control:focus {
+        border-color: #c026d3;
+        outline: none;
+        box-shadow: 0 0 0 2px rgba(192, 18, 98, 0.2);
+    }
+    .bg-gradient-custom {
+        background: linear-gradient(135deg, #6b46c1, #f56565);
+    }
+  </style>
+</head>
+<body class="bg-purple-50 text-gray-800 min-h-screen flex flex-col">
+
+<nav class="bg-purple-600 p-4">
+  <div class="container mx-auto flex justify-between items-center">
+    <a class="text-white text-xl font-bold" href="/">Home | The Ecommercers Tavern</a>
+    <div class="flex space-x-4">
+      <a class="text-white hover:text-gray-300 font-bold" href="/shop">Shop</a>
+      <a class="text-white hover:text-gray-300" href="/about">About</a>
+      <a class="text-white hover:text-gray-300" href="/items">Items</a>
+      <a class="text-white hover:text-gray-300" href="/categories">Categories</a>
+      <a class="text-white hover:text-gray-300" href="/add">Add Item</a>
+    </div>
+  </div>
+</nav>
+
+<div class="bg-cover bg-center h-96 text-white flex items-center justify-center" style="background-image: url('https://images.unsplash.com/photo-1530565337452-355c4deada80?q=80&w=1470&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D');">
+  <div class="bg-purple-800 bg-opacity-75 p-10 rounded-lg text-center">
+    <h1 class="text-5xl font-bold mb-4">Our Shop</h1>
+    <p class="text-xl">Explore our exclusive range of products</p>
+  </div>
+</div>
+
+<div class="container mx-auto py-16 px-4">
+  <div class="grid lg:grid-cols-3 md:grid-cols-2 sm:grid-cols-1 gap-8">
+    <!-- Product 1 -->
+    <div class="bg-white p-8 rounded-lg shadow-lg transition-transform transform hover:-translate-y-2 hover:shadow-2xl">
+      <img src="https://images.unsplash.com/photo-1630709437016-ee675b9b29b8?q=80&w=2670&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D" alt="Lawnmower" class="w-full h-48 object-cover mb-4 rounded-md">
+      <h2 class="text-2xl font-bold text-purple-600 mb-4">Lawnmower</h2>
+      <p class="text-lg text-gray-700 leading-relaxed">Five height adjusting Lawnmower with 8X Durable Blades</p>
+      <p class="text-gray-900 font-bold">$199.99</p>
+      <button class="mt-4 bg-purple-600 hover:bg-purple-700 text-white py-2 px-4 rounded-md focus:outline-none">Add to Cart</button>
+    </div>
+    <!-- Product 2 -->
+    <div class="bg-white p-8 rounded-lg shadow-lg transition-transform transform hover:-translate-y-2 hover:shadow-2xl">
+      <img src="https://images.unsplash.com/photo-1486286701208-1d58e9338013?q=80&w=2670&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D" alt="Soccer Ball" class="w-full h-48 object-cover mb-4 rounded-md">
+      <h2 class="text-2xl font-bold text-purple-600 mb-4">Soccer Ball</h2>
+      <p class="text-lg text-gray-700 leading-relaxed">2016 World FIFA Signature Ball</p>
+      <p class="text-gray-900 font-bold">$29.99</p>
+      <button class="mt-4 bg-purple-600 hover:bg-purple-700 text-white py-2 px-4 rounded-md focus:outline-none">Add to Cart</button>
+    </div>
+    <!-- Product 3 -->
+    <div class="bg-white p-8 rounded-lg shadow-lg transition-transform transform hover:-translate-y-2 hover:shadow-2xl">
+      <img src="https://images.unsplash.com/photo-1689011266277-f7c82c6f4ce4?q=80&w=2576&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D" alt="Weber BBQ" class="w-full h-48 object-cover mb-4 rounded-md">
+      <h2 class="text-2xl font-bold text-purple-600 mb-4">Weber BBQ</h2>
+      <p class="text-lg text-gray-700 leading-relaxed">Brand New Gas/Coal powered Grill</p>
+      <p class="text-gray-900 font-bold">$149.99</p>
+      <button class="mt-4 bg-purple-600 hover:bg-purple-700 text-white py-2 px-4 rounded-md focus:outline-none">Add to Cart</button>
+    </div>
+    <!-- Product 4 -->
+    <div class="bg-white p-8 rounded-lg shadow-lg transition-transform transform hover:-translate-y-2 hover:shadow-2xl">
+      <img src="https://images.unsplash.com/photo-1609255386725-b9b6a8ad829c?q=80&w=2604&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D" alt="Headphones" class="w-full h-48 object-cover mb-4 rounded-md">
+      <h2 class="text-2xl font-bold text-purple-600 mb-4">Bluetooth Headphones</h2>
+      <p class="text-lg text-gray-700 leading-relaxed">Wireless Sony Headphones</p>
+      <p class="text-gray-900 font-bold">$79.99</p>
+      <button class="mt-4 bg-purple-600 hover:bg-purple-700 text-white py-2 px-4 rounded-md focus:outline-none">Add to Cart</button>
+    </div>
+    <!-- Product 5 -->
+    <div class="bg-white p-8 rounded-lg shadow-lg transition-transform transform hover:-translate-y-2 hover:shadow-2xl">
+      <img src="https://images.unsplash.com/photo-1606986601547-a4d886b671b2?q=80&w=2670&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D" alt="Camera" class="w-full h-48 object-cover mb-4 rounded-md">
+      <h2 class="text-2xl font-bold text-purple-600 mb-4">Sony Camera</h2>
+      <p class="text-lg text-gray-700 leading-relaxed">Professional DSLR Camera</p>
+      <p class="text-gray-900 font-bold">$999.99</p>
+      <button class="mt-4 bg-purple-600 hover:bg-purple-700 text-white py-2 px-4 rounded-md focus:outline-none">Add to Cart</button>
+    </div>
+    <!-- Product 6 -->
+    <div class="bg-white p-8 rounded-lg shadow-lg transition-transform transform hover:-translate-y-2 hover:shadow-2xl">
+      <img src="https://images.unsplash.com/photo-1611078489935-0cb964de46d6?q=80&w=2574&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D" alt="Laptop" class="w-full h-48 object-cover mb-4 rounded-md">
+      <h2 class="text-2xl font-bold text-purple-600 mb-4">Gaming Laptop</h2>
+      <p class="text-lg text-gray-700 leading-relaxed">High Performance Laptop</p>
+      <p class="text-gray-900 font-bold">$1,299.99</p>
+      <button class="mt-4 bg-purple-600 hover:bg-purple-700 text-white py-2 px-4 rounded-md focus:outline-none">Add to Cart</button>
+    </div>
+  </div>
+</div>
+
+</body>
+</html>

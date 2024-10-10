@@ -1,0 +1,26 @@
+{
+  "name": "web322-app",
+  "version": "1.0.0",
+  "description": "E-commerce Site",
+  "main": "server.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "node server.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/MeetSonagara1101/web322-app.git"
+  },
+  "keywords": [
+    "n/a"
+  ],
+  "author": "Meet Hitesh Sonagara",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/MeetSonagara1101/web322-app/issues"
+  },
+  "homepage": "https://github.com/MeetSonagara1101/web322-app#readme",
+  "dependencies": {
+    "express": "^4.21.1"
+  }
+}

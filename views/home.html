@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Our E-commerce Store</title>
+    <link rel="stylesheet" href="/css/main.css">
+</head>
+<body>
+    <header>
+        <h1>Our E-commerce Store</h1>
+    </header>
+    <nav>
+        <ul>
+            <li><a href="/">Home</a></li>
+            <li><a href="/about">About</a></li>
+        </ul>
+    </nav>
+    <main>
+        <h2>Welcome to Our Store</h2>
+        <div id="product-grid" class="product-grid"></div>
+    </main>
+    <footer>
+        <p>&copy; 2024 Our E-commerce Store. All rights reserved.</p>
+    </footer>
+    <script>
+        fetch('/shop')
+            .then(response => response.json())
+            .then(items => {
+                const productGrid = document.getElementById('product-grid');
+                items.forEach(item => {
+                    const productCard = document.createElement('div');
+                    productCard.className = 'product-card';
+                    productCard.innerHTML = `
+                        <h3>${item.name}</h3>
+                        <p>Price: $${item.price}</p>
+                        <p>Category: ${item.category}</p>
+                    `;
+                    productGrid.appendChild(productCard);
+                });
+            })
+            .catch(error => console.error('Error:', error));
+    </script>
+</body>
+</html>

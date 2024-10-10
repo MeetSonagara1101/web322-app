@@ -1,0 +1,138 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Items | The Ecommercers Tavern</title>
+    <link href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css" rel="stylesheet">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css" rel="stylesheet">
+    <style>
+        .bold {
+            font-weight: bold;
+        }
+        .item-list {
+            display: flex;
+            align-items: center;
+            border-bottom: 1px solid #e2e8f0; /* Light gray border for separation */
+            padding: 10px 0;
+        }
+        .item-image {
+            width: 50px; /* Small image size */
+            height: 50px;
+            object-fit: cover;
+            border-radius: 4px;
+            margin-right: 10px;
+        }
+    </style>
+</head>
+<body class="bg-purple-50 text-gray-800">
+    <nav class="bg-purple-600 p-4">
+        <div class="container mx-auto flex justify-between items-center">
+            <a class="text-white text-xl font-bold" href="/">Home | The Ecommercers Tavern</a>
+            <div class="flex space-x-4">
+                <a class="text-white hover:text-gray-300" href="/shop">Shop</a>
+                <a class="text-white hover:text-gray-300" href="/about">About</a>
+                <a class="text-white hover:text-gray-300 bold" href="/items">Items</a>
+                <a class="text-white hover:text-gray-300" href="/categories">Categories</a>
+                <a class="text-white hover:text-gray-300" href="/add">Add Item</a>
+            </div>
+        </div>
+    </nav>
+
+    <div class="bg-cover bg-center h-96 text-white flex items-center justify-center" style="background-image: url('https://images.unsplash.com/photo-1530565337452-355c4deada80?q=80&w=1470&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D');">
+        <div class="bg-purple-800 bg-opacity-75 p-10 rounded-lg text-center">
+            <h1 class="text-5xl font-bold mb-4">Our Items</h1>
+            <p class="text-xl">Discover our wide range of products</p>
+        </div>
+    </div>
+
+    <div class="container mx-auto py-16">
+        <!-- List of items -->
+		<div class="item-list">
+    <img src="https://images.unsplash.com/photo-1526413494904-7a15c807b00e?q=80&w=1480&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D" alt="Digital Camera" class="item-image">
+    <div>
+        <h2 class="text-xl font-bold text-purple-600">Digital Camera</h2>
+        <p class="text-gray-700">High-resolution camera EOS 6D 4K video recording.</p>
+        <p class="text-gray-900 font-bold">$399.99</p>
+    </div>
+</div>
+<div class="item-list">
+    <img src="https://images.unsplash.com/photo-1579721840641-7d0e67f1204e?q=80&w=1592&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D" alt="Smartwatch" class="item-image">
+    <div>
+        <h2 class="text-xl font-bold text-purple-600">Smartwatch</h2>
+        <p class="text-gray-700">Fitness tracking smartwatch with heart rate monitor and GPS.</p>
+        <p class="text-gray-900 font-bold">$199.99</p>
+    </div>
+</div>
+<div class="item-list">
+    <img src="https://images.unsplash.com/photo-1606186226740-0528ea7dfeed?q=80&w=1470&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D" alt="Electric Scooter" class="item-image">
+    <div>
+        <h2 class="text-xl font-bold text-purple-600">Electric Scooter</h2>
+        <p class="text-gray-700">Eco-friendly electric scooter with a top speed of 20 mph.</p>
+        <p class="text-gray-900 font-bold">$349.99</p>
+    </div>
+</div>
+<div class="item-list">
+    <img src="https://images.unsplash.com/photo-1621259182978-fbf93132d53d?q=80&w=1632&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D" alt="Gaming Console" class="item-image">
+    <div>
+        <h2 class="text-xl font-bold text-purple-600">Xbox Gaming Console</h2>
+        <p class="text-gray-700">Latest Xbox gaming console with 1TB storage and 4K support.</p>
+        <p class="text-gray-900 font-bold">$499.99</p>
+    </div>
+</div>
+        <div class="item-list">
+            <img src="https://images.unsplash.com/photo-1630709437016-ee675b9b29b8?q=80&w=2670&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D" alt="Lawnmower" class="item-image">
+            <div>
+                <h2 class="text-xl font-bold text-purple-600">Lawnmower</h2>
+                <p class="text-gray-700">Five height adjusting Lawnmower with 8X Durable Blades</p>
+                <p class="text-gray-900 font-bold">$199.99</p>
+            </div>
+        </div>
+        <div class="item-list">
+            <img src="https://images.unsplash.com/photo-1486286701208-1d58e9338013?q=80&w=2670&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D" alt="Soccer Ball" class="item-image">
+            <div>
+                <h2 class="text-xl font-bold text-purple-600">Soccer Ball</h2>
+                <p class="text-gray-700">2016 World FIFA Signature Ball</p>
+                <p class="text-gray-900 font-bold">$29.99</p>
+            </div>
+        </div>
+        <div class="item-list">
+            <img src="https://images.unsplash.com/photo-1689011266277-f7c82c6f4ce4?q=80&w=2576&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D" alt="Weber BBQ" class="item-image">
+            <div>
+                <h2 class="text-xl font-bold text-purple-600">Weber BBQ</h2>
+                <p class="text-gray-700">Brand New Gas/Coal powered Grill</p>
+                <p class="text-gray-900 font-bold">$149.99</p>
+            </div>
+        </div>
+        <div class="item-list">
+            <img src="https://images.unsplash.com/photo-1609255386725-b9b6a8ad829c?q=80&w=2604&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D" alt="Headphones" class="item-image">
+            <div>
+                <h2 class="text-xl font-bold text-purple-600">Bluetooth Headphones</h2>
+                <p class="text-gray-700">Wireless Sony Headphones</p>
+                <p class="text-gray-900 font-bold">$79.99</p>
+            </div>
+        </div>
+        <div class="item-list">
+            <img src="https://images.unsplash.com/photo-1606986601547-a4d886b671b2?q=80&w=2670&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D" alt="Camera" class="item-image">
+            <div>
+                <h2 class="text-xl font-bold text-purple-600">Sony Camera</h2>
+                <p class="text-gray-700">Professional DSLR Camera</p>
+                <p class="text-gray-900 font-bold">$999.99</p>
+            </div>
+        </div>
+        <div class="item-list">
+            <img src="https://images.unsplash.com/photo-1611078489935-0cb964de46d6?q=80&w=2574&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D" alt="Laptop" class="item-image">
+            <div>
+                <h2 class="text-xl font-bold text-purple-600">Gaming Laptop</h2>
+                <p class="text-gray-700">High Performance Laptop</p>
+                <p class="text-gray-900 font-bold">$1,299.99</p>
+            </div>
+        </div>
+    </div>
+
+    <div class="flex justify-center my-8">
+        <a href="/page2" class="mx-2 py-2 px-4 bg-purple-600 hover:bg-purple-700 text-white rounded-md">Prev Page</a>
+        <a href="/page2" class="mx-2 py-2 px-4 bg-purple-600 hover:bg-purple-700 text-white rounded-md">Next Page</a>
+    </div>
+</body>
+</html>

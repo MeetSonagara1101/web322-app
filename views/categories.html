@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Categories | The Ecommercers Tavern</title>
+    <link href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css" rel="stylesheet">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css" rel="stylesheet">
+  <style>
+    .form-control:focus {
+        border-color: #ff7e5f;
+        outline: none;
+        box-shadow: 0 0 0 2px rgba(255, 123, 95, 0.2);
+    }
+  </style>
+</head>
+<body class="bg-purple-50 text-gray-800 min-h-screen flex flex-col">
+
+  <nav class="bg-gradient-to-r from-purple-800 to-blue-600 p-4">
+    <div class="container mx-auto flex justify-between items-center">
+      <a class="text-white text-xl font-bold" href="/">Home | The Ecommercers Tavern</a>
+      <div class="flex space-x-4">
+        <a class="text-white hover:text-gray-300" href="/shop">Shop</a>
+        <a class="text-white hover:text-gray-300" href="/about">About</a>
+        <a class="text-white hover:text-gray-300" href="/items">Items</a>
+        <a class="text-white font-bold hover:text-gray-300" href="/categories">Categories</a>
+        <a class="text-white hover:text-gray-300" href="/add">Add Item</a>
+      </div>
+    </div>
+  </nav>
+
+    <div class="bg-gradient-to-r from-blue-500 to-purple-600 text-white py-16">
+        <div class="container mx-auto text-center">
+            <h1 class="text-5xl font-extrabold mb-4">Product Categories</h1>
+            <p class="text-xl">Browse products by categories</p>
+        </div>
+    </div>
+
+    <div class="container mx-auto py-16">
+    <div class="grid md:grid-cols-3 gap-8">
+        <!-- Category Card -->
+        <a href="/category/home" class="bg-white p-8 rounded-lg shadow-lg border border-purple-600 block hover:bg-purple-50 transition">
+            <h2 class="text-3xl font-bold text-purple-600 mb-4">Home, Garden</h2>
+            <p class="text-lg text-gray-700 leading-relaxed">Explore our selection of home and garden items. From furniture to garden tools, find everything you need to make your living space beautiful.</p>
+        </a>
+        <!-- Category Card -->
+        <a href="/category/electronics" class="bg-white p-8 rounded-lg shadow-lg border border-blue-600 block hover:bg-blue-50 transition">
+            <h2 class="text-3xl font-bold text-blue-600 mb-4">Electronics, Computers, Video Games</h2>
+            <p class="text-lg text-gray-700 leading-relaxed">Discover the latest in electronics, computers, and video games. Get the best deals on gadgets and gaming gear.</p>
+        </a>
+        <!-- Category Card -->
+        <a href="/category/clothing" class="bg-white p-8 rounded-lg shadow-lg border border-red-600 block hover:bg-red-50 transition">
+            <h2 class="text-3xl font-bold text-red-600 mb-4">Clothing</h2>
+            <p class="text-lg text-gray-700 leading-relaxed">Shop the latest fashion trends and find your perfect look. From casual wear to formal attire, we have it all.</p>
+        </a>
+        <!-- Category Card -->
+        <a href="/category/outdoors" class="bg-white p-8 rounded-lg shadow-lg border border-purple-600 block hover:bg-purple-50 transition">
+            <h2 class="text-3xl font-bold text-purple-600 mb-4">Sports & Outdoors</h2>
+            <p class="text-lg text-gray-700 leading-relaxed">Gear up for your next adventure with our sports and outdoor equipment. Find everything from hiking gear to fitness equipment.</p>
+        </a>
+        <!-- Category Card -->
+        <a href="/category/pets" class="bg-white p-8 rounded-lg shadow-lg border border-blue-600 block hover:bg-blue-50 transition">
+            <h2 class="text-3xl font-bold text-blue-600 mb-4">Pets</h2>
+            <p class="text-lg text-gray-700 leading-relaxed">Pamper your pets with our wide range of pet supplies. From food to toys, we have everything to keep your furry friends happy.</p>
+        </a>
+        <!-- Additional Category Card -->
+        <a href="/category/health-wellness" class="bg-white p-8 rounded-lg shadow-lg border border-red-600 block hover:bg-red-50 transition">
+            <h2 class="text-3xl font-bold text-red-600 mb-4">Health & Wellness</h2>
+            <p class="text-lg text-gray-700 leading-relaxed">Find products to enhance your health and wellness. From supplements to personal care items, discover ways to stay healthy and active.</p>
+        </a>
+    </div>
+</div>
+
+
+    <footer class="bg-gradient-to-r from-blue-500 to-purple-600 text-white p-4 mt-auto">
+        <div class="container mx-auto flex justify-between items-center">
+            <p>&copy; 2024 Janipan Sivaguru</p>
+            <div class="flex space-x-4">
+                <a href="#" class="hover:text-gray-300"><i class="fab fa-facebook-f text-xl"></i></a>
+                <a href="#" class="hover:text-gray-300"><i class="fab fa-twitter text-xl"></i></a>
+                <a href="#" class="hover:text-gray-300"><i class="fab fa-linkedin-in text-xl"></i></a>
+                <a href="https://github.com/azuufer/web322-app" class="hover:text-gray-300"><i class="fab fa-github text-xl"></i></a>
+            </div>
+        </div>
+    </footer>
+
+    <script src="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.js"></script>
+</body>
+</html>
